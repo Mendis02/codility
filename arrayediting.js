@@ -3,14 +3,17 @@
 
 function solution(A, K) {
     // write your code in JavaScript (Node.js 14)
-    
-    for (let i=0; i<K;i++ ){
-        let lastelement = A[A.length -1]
-        A.pop()
-        A.unshift(lastelement)
-    }
-    return A
-}
+    const length = A.length
+    if(length==0){
+        console.log(A)
 
-let x= solution([1,2,3],2)
-console.log(x)
+    } else{
+        for (let i=0; i<K;i++ ){
+            let lastelement = A[A.length -1]
+            A.pop()
+            A.unshift(lastelement)
+        }
+    
+    }
+    return A 
+}
