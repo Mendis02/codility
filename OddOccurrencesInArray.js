@@ -9,7 +9,8 @@ for (let i = 0; i < K; i++) {
         occurancesCount[A[i]] = 1
     }
 }
+
 console.log(occurancesCount.size)
-//for (let i = 0 ; i++;){
+    //for (let i = 0 ; i++;){
 
     //console.log(occurancesCount[i])
