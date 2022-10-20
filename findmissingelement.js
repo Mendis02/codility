@@ -1,6 +1,6 @@
 function solution(A) {
-    // write your code in JavaScript (Node.js 14)
-    A.sort()
+    
+    A.sort(function(a, b){return a-b})
     let x = 1
     let k = A.length
 
@@ -8,7 +8,7 @@ function solution(A) {
         if (A[i] != x) {
             return x
             break
-        }
+        }   
         x = x + 1
 
     }
