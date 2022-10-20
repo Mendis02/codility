@@ -1,4 +1,4 @@
-A = [1, 2, 3, 3, 3, 9, 9]
+A = [1,1, 2, 3, 3, 3, 9, 9,2]
 let K = A.length
 const occurancesCount = {}
 
@@ -9,8 +9,12 @@ for (let i = 0; i < K; i++) {
         occurancesCount[A[i]] = 1
     }
 }
+console.log(occurancesCount)
 
-console.log(occurancesCount.size)
-    //for (let i = 0 ; i++;){
 
-    //console.log(occurancesCount[i])
+for (let i in occurancesCount){
+    if (occurancesCount[i]%2==1){
+        console.log(i)
+    }
+}
+    
