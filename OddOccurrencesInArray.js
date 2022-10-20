@@ -11,10 +11,12 @@ for (let i = 0; i < K; i++) {
 }
 console.log(occurancesCount)
 
+let x;
 
 for (let i in occurancesCount){
     if (occurancesCount[i]%2==1){
-        console.log(i)
+        x=i
     }
+
 }
-    
+console.log(x)
