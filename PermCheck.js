@@ -16,4 +16,3 @@ function solution(A) {
     let z = 1
     return z
 }
-solution([1,3,2,4,6])
