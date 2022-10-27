@@ -1,8 +1,4 @@
-// you can write to stdout for debugging purposes, e.g.
-// console.log('this is a debug message');
-
 function solution(A) {
-    // write your code in JavaScript (Node.js 14)
     let n = A.length
     let x = 0
     let dif1, dif, mindif
@@ -10,23 +6,25 @@ function solution(A) {
 
     x = x + A[0]
     dif1 = sum - x * 2
+    // console.log(dif1)
     dif = Math.abs(dif1)
     mindif = dif
-
+    // console.log(mindif)
     if (n>2){
-        for (let i = 1; i < n; i++) {
+        for (let i = 1; i < (n-1); i++) {
             x = x + A[i]
             dif1 = sum - x * 2
+            // console.log(dif1)
             dif = Math.abs(dif1)
 
             if (dif < mindif) {
                 mindif = dif
             }
-
-
+            // console.log(mindif)
         }
     }
     parseInt(mindif)
-    return mindif
-
+    // return mindif
+    console.log(mindif)
 }
+solution([-10,-20,-30,-40,100])
